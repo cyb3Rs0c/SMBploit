@@ -25,6 +25,6 @@ chmod +x *.sh
 
 -:- -:- -:- -:- -:- -:- -:- -:-
 
-**DO NOT BE MAD**
+**NOT BE MAD**
 
 
