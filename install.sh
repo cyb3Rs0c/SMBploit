@@ -82,6 +82,7 @@ echo -e "$b[$v+$b]$a Installing Wine32 $nc"
 sleep 4
 echo ""
 dpkg --add-architecture i386 && apt-get install -y wine32
+apt-get install -y wine32
 echo ""
 echo -e "$b[$v+$b]$a Update $nc"
 sleep 4
