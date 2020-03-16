@@ -25,6 +25,7 @@ n8=8
 si=✔
 no=x
 
+tput civis
 clear
 
 function checkroot(){
@@ -36,15 +37,12 @@ function checkroot(){
 	    echo -e " $b[$v$si$b] root $nc"
 	    sleep 4
 	    echo ""
-	    echo -e "$a Initializing SMBploit $nc"
-	    sleep 4
-	    echo ""
     else
             echo ""
 	    echo -e " $b[$r$no$b] root $nc"
 	    sleep 4
 	    echo ""
-	    echo -e "$a exiting $nc"
+	    echo -e "$r EXITING $nc"
 	    sleep 4
 	    echo ""
 	    exit
@@ -83,6 +81,8 @@ function banner(){
        echo -e "$b └══════════════════════════════════════════┘$b"
        echo ""
 }
+
+tput cnorm
 
 function menu(){
 read -p " $(echo -e $v$shell $nc)" opc
