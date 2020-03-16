@@ -36,8 +36,8 @@ function checkroot(){
     fi	
 }
 
-checkroot
 tput civis
+checkroot
 service postgresql start
 clear
 sleep 1
