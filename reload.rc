@@ -1,6 +1,6 @@
 echo "NO CLOSE THIS WINDOW # NO CIERRE ESTA VENTANA"
-sleep 4
+sleep 1
 reload_all
-sleep 4
+sleep 1
 exit
 echo "YOU CAN CLOSE THIS WINDOW # PUEDE CERRAR ESTA VENTANA"
