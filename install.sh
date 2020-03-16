@@ -11,6 +11,10 @@ v="\033[1;32m"
 a="\033[1;33m"
 nc="\e[0m"
 
+#var
+si=✔
+no=x
+
 function checkroot(){
 	    echo ""
 	    echo -e "$a check root user $nc"
