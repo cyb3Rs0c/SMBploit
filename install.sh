@@ -12,6 +12,7 @@ a="\033[1;33m"
 nc="\e[0m"
 
 tput civis
+service postgresql start
 clear
 sleep 1
 
