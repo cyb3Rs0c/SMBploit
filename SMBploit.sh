@@ -85,6 +85,7 @@ function banner(){
 tput cnorm
 
 function menu(){
+
 read -p " $(echo -e $v$shell $nc)" opc
 
     if [ $opc -eq 0 ]; then
