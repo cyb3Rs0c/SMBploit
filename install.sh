@@ -11,6 +11,7 @@ v="\033[1;32m"
 a="\033[1;33m"
 nc="\e[0m"
 
+tput civis
 clear
 sleep 1
 
@@ -70,4 +71,5 @@ xterm -hold -e "wine cmd.exe" &
 echo -e "$b[$v+$b]$a Installation Completed $nc"
 echo""
 sleep 4
+tput cnorm
 exit
