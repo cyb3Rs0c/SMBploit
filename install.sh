@@ -11,6 +11,28 @@ v="\033[1;32m"
 a="\033[1;33m"
 nc="\e[0m"
 
+function checkroot(){
+	    echo ""
+	    echo -e "$a check root user $nc"
+	    sleep 4
+    if [ "$(id -u)" == "0" ]; then
+	    echo ""
+	    echo -e " $b[$v$si$b] root $nc"
+	    sleep 4
+	    echo ""
+    else
+            echo ""
+	    echo -e " $b[$r$no$b] root $nc"
+	    sleep 4
+	    echo ""
+	    echo -e "$r EXITING $nc"
+	    sleep 4
+	    echo ""
+	    exit
+    fi	
+}
+
+checkroot
 tput civis
 service postgresql start
 clear
