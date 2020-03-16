@@ -11,6 +11,8 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows
 
 **Install:**
 
+https://youtu.be/d5qhg6w-A9w
+
 cd ~
 
 git clone https://github.com/d4t4s3c/SMBploit.git
