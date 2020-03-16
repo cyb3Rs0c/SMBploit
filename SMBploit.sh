@@ -50,8 +50,6 @@ function checkroot(){
 }
 
 checkroot
-
-#serv
 service postgresql start
 clear
 
