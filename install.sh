@@ -13,7 +13,7 @@ nc="\e[0m"
 
 #var
 si=✔
-no=x
+no=✘
 
 function checkroot(){
 	    echo ""
@@ -36,12 +36,6 @@ function checkroot(){
     fi	
 }
 
-tput civis
-checkroot
-service postgresql start
-clear
-sleep 1
-
 function banner(){
        echo -e "$b ┌══════════════════════════════════════════┐"
        echo -e "$b ║$v  ____  __  __ ____        _       _ _    $b║"
@@ -56,6 +50,12 @@ function banner(){
        echo -e "$b └══════════════════════════════════════════┘$b"
 }
 
+clear
+tput civis
+checkroot
+service postgresql start
+clear
+sleep 1
 banner
 sleep 2
 
