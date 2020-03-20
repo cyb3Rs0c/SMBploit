@@ -293,6 +293,7 @@ tput civis
 clear
 checkroot
 service postgresql start
+clear
 banner
 tput cnorm
 menu
