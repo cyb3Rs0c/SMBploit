@@ -23,10 +23,7 @@ n6=6
 n7=7
 n8=8
 si=✔
-no=x
-
-tput civis
-clear
+no=✘
 
 function checkroot(){
 	    echo ""
@@ -48,10 +45,6 @@ function checkroot(){
 	    exit
     fi	
 }
-
-checkroot
-service postgresql start
-clear
 
 function banner(){
        echo -e "$b ┌══════════════════════════════════════════┐"
@@ -79,8 +72,6 @@ function banner(){
        echo -e "$b └══════════════════════════════════════════┘$b"
        echo ""
 }
-
-tput cnorm
 
 function menu(){
 
@@ -298,5 +289,10 @@ read -p " $(echo -e $v$shell $nc)" opc
     fi
 }
 
+tput civis
+clear
+checkroot
+service postgresql start
 banner
+tput cnorm
 menu
