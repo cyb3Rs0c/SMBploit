@@ -23,6 +23,10 @@ chmod +x *.sh
 
 ./SMBploit.sh
 ```
+# Tested On:
+
+Kali Linux
+
 # NOT BE BAD
 
 
