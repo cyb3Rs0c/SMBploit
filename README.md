@@ -10,7 +10,7 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows
 ![](/screenshot/screenshot2.png)
 
 # Install:
-
+```
 cd ~
 
 git clone https://github.com/d4t4s3c/SMBploit.git
@@ -22,7 +22,7 @@ chmod +x *.sh
 ./install.sh
 
 ./SMBploit.sh
-
+```
 **Video**
 
 https://youtu.be/d5qhg6w-A9w
