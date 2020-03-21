@@ -1,15 +1,15 @@
 # SMBploit
 Pentesting tool for SMB (Samba) protocol in Microsoft Windows
 
-**ONLY USE FOR EDUCATIONAL PURPOSES**
+# ONLY USE FOR EDUCATIONAL PURPOSES
 
-**Screenshot**
+# Screenshot
 
 ![](/screenshot/screenshot1.png)
 
 ![](/screenshot/screenshot2.png)
 
-**Install:**
+# Install:
 
 cd ~
 
