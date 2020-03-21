@@ -4,13 +4,13 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows
 
 # ONLY USE FOR EDUCATIONAL PURPOSES
 
-# Screenshot
+**Screenshot**
 
 ![](/screenshot/screenshot1.png)
 
 ![](/screenshot/screenshot2.png)
 
-# Install:
+**Install:**
 ```
 root@kali:~# cd ~ (IMPORTANT no "git clone" in: Desktop/Download)
 
@@ -25,7 +25,7 @@ root@kali:~# ./install.sh
 root@kali:~# ./SMBploit.sh
 ```
 
-# Tested On:
+**Tested On:**
 
 - Kali Linux
 
