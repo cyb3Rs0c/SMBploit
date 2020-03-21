@@ -25,7 +25,7 @@ chmod +x *.sh
 ```
 # Tested On:
 
-> Kali Linux
+- Kali Linux
 
 # NOT BE BAD
 
