@@ -12,7 +12,7 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows
 
 **Install:**
 ```
-root@kali:~# cd ~ (IMPORTANT no "git clone" in: Desktop/Download)
+root@kali:~# cd ~ (IMPORTANT no "git clone" in: Desktop,Downloads,Tools)
 
 root@kali:~# git clone https://github.com/d4t4s3c/SMBploit.git
 
