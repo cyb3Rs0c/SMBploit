@@ -23,12 +23,12 @@ chmod +x *.sh
 
 ./SMBploit.sh
 ```
-**Video**
+# Video
 
 https://youtu.be/d5qhg6w-A9w
 
 -:- -:- -:- -:- -:- -:- -:- -:-
 
-**NOT BE BAD**
+# NOT BE BAD
 
 
