@@ -12,18 +12,19 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows
 
 # Install:
 ```
-cd ~ (IMPORTANT no "git clone" in: Desktop/Download)
+root@kali:~# cd ~ (IMPORTANT no "git clone" in: Desktop/Download)
 
-git clone https://github.com/d4t4s3c/SMBploit.git
+root@kali:~# git clone https://github.com/d4t4s3c/SMBploit.git
 
-cd SMBploit
+root@kali:~# cd SMBploit
 
-chmod +x *.sh
+root@kali:~# chmod +x *.sh
 
-./install.sh
+root@kali:~# ./install.sh
 
-./SMBploit.sh
+root@kali:~# ./SMBploit.sh
 ```
+
 # Tested On:
 
 - Kali Linux
