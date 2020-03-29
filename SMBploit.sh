@@ -96,7 +96,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    banner
 	    menu
-	elif [ $opc -eq 1 ]; then
+    elif [ $opc -eq 1 ]; then
 	    echo ""
 	    echo -e "$a ¿RHOST?$nc"
 	    echo ""
