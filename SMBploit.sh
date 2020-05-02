@@ -148,7 +148,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-	elif [ $opc -eq 4 ]; then
+    elif [ $opc -eq 4 ]; then
 	    echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -171,7 +171,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 5 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -195,7 +195,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 6 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -219,7 +219,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 7 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -236,14 +236,14 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    set TARGETARCHITECTURE x64;
 	    exploit;
 	    exit; "
-        echo ""
+            echo ""
 	    sleep 5
 	    clear
 	    sleep 1
 	    main
 	    menu
     elif [ $opc -eq 8 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -267,7 +267,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 9 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -291,7 +291,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 10 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -314,8 +314,8 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-	elif [ $opc -eq 11 ]; then
-        echo ""
+    elif [ $opc -eq 11 ]; then
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -338,8 +338,8 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-	elif [ $opc -eq 12 ]; then
-        echo ""
+    elif [ $opc -eq 12 ]; then
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -362,8 +362,8 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-	elif [ $opc -eq 13 ]; then
-        echo ""
+    elif [ $opc -eq 13 ]; then
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -387,7 +387,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 14 ]; then
-        echo ""
+            echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
 	    read lhost
@@ -414,17 +414,17 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    echo ""
 	    echo -e "$a        |\/\/\/|"
-        echo -e "        |      |" 
-        echo -e "        |      |" 
-        echo -e "        | (o)(o) " 
-        echo -e "        C      _) "
-        echo -e "         | ,___|  "
-        echo -e "         |   /    "
-        echo -e "        /____\ "
-        echo -e "       /      \ $nc"
-        echo -e "$b#### $v BYE $v HACKER $b ####"
-        echo ""
-        echo ""
+            echo -e "        |      |" 
+            echo -e "        |      |" 
+            echo -e "        | (o)(o) " 
+            echo -e "        C      _) "
+            echo -e "         | ,___|  "
+            echo -e "         |   /    "
+            echo -e "        /____\ "
+            echo -e "       /      \ $nc"
+            echo -e "$b#### $v BYE $v HACKER $b ####"
+            echo ""
+            echo ""
 	    sleep 3
 	    exit
     else
