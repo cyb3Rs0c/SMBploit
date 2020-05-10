@@ -87,7 +87,7 @@ echo ""
 echo -e "$b[$v+$b]$a Update $nc"
 sleep 4
 echo ""
-apt-get update -y && apt-get upgrade -y && apt-get dist-upgrade -y
+apt-get update -y
 echo ""
 echo -e "$b[$v+$b]$a Testing Wine$nc"
 echo ""
