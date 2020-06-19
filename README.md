@@ -6,11 +6,11 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows (Metasploit-Framew
 
 **Screenshot**
 
-![](/screenshot/1.png)
+![](/screenshot/001.png)
 
-![](/screenshot/2.png)
+![](/screenshot/002.png)
 
-![](/screenshot/3.png)
+![](/screenshot/003.png)
 
 **Install:**
 ```
