@@ -13,19 +13,18 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows (Metasploit-Framew
 ![](/screenshot/003.png)
 
 * Install
-```
-root@kali:~# cd ~
 
-root@kali:~# git clone https://github.com/d4t4s3c/SMBploit.git
+``` root@kali:~# cd ~ ```
 
-root@kali:~# cd SMBploit
+``` root@kali:~# git clone https://github.com/d4t4s3c/SMBploit.git ```
 
-root@kali:~# chmod +x *.sh
+``` root@kali:~# cd SMBploit ```
 
-root@kali:~# ./install.sh
+``` root@kali:~# chmod +x *.sh ```
 
-root@kali:~# ./SMBploit.sh
-```
+``` root@kali:~# ./install.sh ```
+
+``` root@kali:~# ./SMBploit.sh ```
 
 * Tested On
 
