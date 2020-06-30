@@ -4,7 +4,7 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows (Metasploit-Framew
 
 # ONLY USE FOR EDUCATIONAL PURPOSES
 
-**Screenshot**
+* Screenshot
 
 ![](/screenshot/001.png)
 
@@ -12,7 +12,7 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows (Metasploit-Framew
 
 ![](/screenshot/003.png)
 
-**Install:**
+* Install
 ```
 root@kali:~# cd ~
 
@@ -27,10 +27,10 @@ root@kali:~# ./install.sh
 root@kali:~# ./SMBploit.sh
 ```
 
-**Tested On:**
+* Tested On
 
-- Kali
-- Parrot
+  * Kali
+  * Parrot
 
 # NOT BE BAD
 
