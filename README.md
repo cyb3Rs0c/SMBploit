@@ -27,6 +27,11 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows (Metasploit-Framew
 
   * Kali
   * Parrot
+  
+* Requirements:
+   * Metasploit
+   * Wine
+   * Xterm
 
 # NOT BE BAD
 
