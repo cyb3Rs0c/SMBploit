@@ -30,8 +30,9 @@ Pentesting tool for SMB (Samba) protocol in Microsoft Windows (Metasploit-Framew
   
 * Requirements:
    * Metasploit
-   * Wine
    * Xterm
+   * Wine32
+   * Wine
 
 # NOT BE BAD
 
