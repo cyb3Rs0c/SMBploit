@@ -52,7 +52,7 @@ function checkroot(){
 }
 
 function banner(){
-	    echo ""
+	echo ""
         echo -e "$b   ┌══════════════════════════════════════════┐"
         echo -e "$b   ║$v  ____  __  __ ____        _       _ _    $b║"
         echo -e "$b   ║$v / ___||  \/  | __ ) _ __ | | ___ (_) |_  $b║"
@@ -67,7 +67,7 @@ function banner(){
 }
 
 function main(){
-	    echo ""
+	echo ""
         echo -e "$b   +------------------------------------------+"
         echo -e "$b   |$v Op $b|$r Module  $b|$a Windows Version    $b|$v Arch$b | "
         echo -e "$b   +------------------------------------------+"
