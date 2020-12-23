@@ -1,8 +1,9 @@
 #!/bin/bash
 
-#Author: d4t4s3c
-#Email:  d4t4s3c@protonmail.com
-#GitHub: www.github.com/d4t4s3c
+#Author:  d4t4s3c
+#Email:   d4t4s3c@protonmail.com
+#Twitter: @d4t4s3c
+#GitHub:  www.github.com/d4t4s3c
 
 #colors
 b="\033[1;37m"
@@ -13,15 +14,28 @@ nc="\e[0m"
 
 #var
 shell="$"
-n1=01
-n2=02
-n3=03
-n4=04
-n5=05
-n6=06
-n7=07
-n8=08
-n9=09
+v1="Scan"
+v2='Exploit'
+v3='Exit'
+so1='Windows XP'
+so2='Windows Server 2003 SP0'
+so3='Windows Server 2003 SP1+2'
+so4='Windows Server 2003'
+so5='Windows Vista'
+so6='Server 2008'
+so7='Server 2008 R2'
+so8='Windows 7'
+arch1='x86'
+arch2='x64'
+n01=01
+n02=02
+n03=03
+n04=04
+n05=05
+n06=06
+n07=07
+n08=08
+n09=09
 n10=10
 n11=11
 n12=12
@@ -47,45 +61,40 @@ function checkroot(){
 	    echo -e "$r EXITING $nc"
 	    sleep 4
 	    echo ""
-	    exit
+	    exit 1
     fi	
 }
 
 function banner(){
-	echo ""
-        echo -e "$b   ┌══════════════════════════════════════════┐"
-        echo -e "$b   ║$v  ____  __  __ ____        _       _ _    $b║"
-        echo -e "$b   ║$v / ___||  \/  | __ ) _ __ | | ___ (_) |_  $b║"
-        echo -e "$b   ║$v \___ \| |\/| |  _ \| '_ \| |/ _ \| | __| $b║"
-        echo -e "$b   ║$v  ___) | |  | | |_) | |_) | | (_) | | |_  $b║"
-        echo -e "$b   ║$v |____/|_|  |_|____/| .__/|_|\___/|_|\__| $b║"   
-        echo -e "$b   ║$v                    |_|                   $b║"
-        echo -e "$b   ║$r      Author  $b:$a d4t4s3c                   $b║"
-        echo -e "$b   ║$r      Email   $b:$a d4t4s3c@protonmail.com    $b║"
-        echo -e "$b   ║$r      GitHub  $b:$a www.github.com/d4t4s3c    $b║"
-        echo -e "$b   └══════════════════════════════════════════┘$b"
+	echo -e "$b┌══════════════════════════════════════════┐"
+        echo -e "$b║$v  ____  __  __ ____        _       _ _    $b║"
+        echo -e "$b║$v / ___||  \/  | __ ) _ __ | | ___ (_) |_  $b║"
+        echo -e "$b║$v \___ \| |\/| |  _ \| '_ \| |/ _ \| | __| $b║"
+        echo -e "$b║$v  ___) | |  | | |_) | |_) | | (_) | | |_  $b║"
+        echo -e "$b║$v |____/|_|  |_|____/| .__/|_|\___/|_|\__| $b║"
+        echo -e "$b║$r Author $b:$a d4t4s3c $b $v |_|                   $b║"
+        echo -e "$b║$r Email  $b:$a d4t4s3c@protonmail.com          $b║"
+        echo -e "$b║$r Twitter$b:$a @d4t4s3c                        $b║" 
+        echo -e "$b║$r GitHub $b:$a www.github.com/d4t4s3c          $b║"
+        echo -e "$b└══════════════════════════════════════════┘$b"
 }
 
 function main(){
 	echo ""
-        echo -e "$b   +------------------------------------------+"
-        echo -e "$b   |$v Op $b|$r Module  $b|$a Windows Version    $b|$v Arch$b | "
-        echo -e "$b   +------------------------------------------+"
-        echo -e "$b   | $v$n1$b |$r Scan    $b|                    $b|      $b| $nc "
-        echo -e "$b   | $v$n2$b |$r Exploit $b|$a XP                 $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n3$b |$r Exploit $b|$a XP                 $b|$v x64  $b| $nc "
-        echo -e "$b   | $v$n4$b |$r Exploit $b|$a Server 2003 SP0    $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n5$b |$r Exploit $b|$a Server 2003 SP1+2  $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n6$b |$r Exploit $b|$a Server 2003        $b|$v x64  $b| $nc "
-        echo -e "$b   | $v$n7$b |$r Exploit $b|$a Vista              $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n8$b |$r Exploit $b|$a Vista              $b|$v x64  $b| $nc "
-        echo -e "$b   | $v$n9$b |$r Exploit $b|$a Server 2008        $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n10$b |$r Exploit $b|$a Server 2008 R2     $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n11$b |$r Exploit $b|$a Server 2008 R2     $b|$v x64  $b| $nc "
-        echo -e "$b   | $v$n12$b |$r Exploit $b|$a 7                  $b|$v x86  $b| $nc "
-        echo -e "$b   | $v$n13$b |$r Exploit $b|$a 7                  $b|$v x64  $b| $nc "      
-        echo -e "$b   | $v$n99$b |$r Exit    $b|                    $b|      $b| $nc "
-        echo -e "$b   +------------------------------------------+"
+        echo -e "$b[$v$n01$b] [$r$v1$b]$nc"
+        echo -e "$b[$v$n02$b] [$r$v2$b] [$a$so1 $b-------------- $v$arch1$b]$nc"
+        echo -e "$b[$v$n03$b] [$r$v2$b] [$a$so1 $b-------------- $v$arch2$b]$nc"
+        echo -e "$b[$v$n04$b] [$r$v2$b] [$a$so2 $b- $v$arch1$b]$nc"
+        echo -e "$b[$v$n05$b] [$r$v2$b] [$a$so3 $v$arch1$b]$nc"
+        echo -e "$b[$v$n06$b] [$r$v2$b] [$a$so4 $b----- $v$arch2$b]$nc"
+        echo -e "$b[$v$n07$b] [$r$v2$b] [$a$so5 $b----------- $v$arch1$b]$nc"
+        echo -e "$b[$v$n08$b] [$r$v2$b] [$a$so5 $b----------- $v$arch2$b]$nc"
+        echo -e "$b[$v$n09$b] [$r$v2$b] [$a$so6 $b------------- $v$arch1$b]$nc"
+        echo -e "$b[$v$n10$b] [$r$v2$b] [$a$so7 $b---------- $v$arch1$b]$nc"
+        echo -e "$b[$v$n11$b] [$r$v2$b] [$a$so7 $b---------- $v$arch2$b]$nc"
+        echo -e "$b[$v$n12$b] [$r$v2$b] [$a$so8 $b--------------- $v$arch1$b]$nc"
+        echo -e "$b[$v$n13$b] [$r$v2$b] [$a$so8 $b--------------- $v$arch2$b]$nc"
+        echo -e "$b[$v$n99$b] [$r$v3$b]$nc"
         echo ""
 }
 
@@ -93,7 +102,7 @@ function menu(){
 
 read -p " $(echo -e $v$shell $nc)" opc
 
-    if [ $opc -eq 1 ]; then
+    if [ $opc -eq 01 ]; then
 	    echo ""
 	    echo -e "$a ¿RHOST?$nc"
 	    echo ""
@@ -110,7 +119,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 2 ]; then
+    elif [ $opc -eq 02 ]; then
 	    echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -132,7 +141,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 3 ]; then
+    elif [ $opc -eq 03 ]; then
 	    echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -154,7 +163,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 4 ]; then
+    elif [ $opc -eq 04 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -178,7 +187,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 5 ]; then
+    elif [ $opc -eq 05 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -202,7 +211,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 6 ]; then
+    elif [ $opc -eq 06 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -226,7 +235,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 7 ]; then
+    elif [ $opc -eq 07 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -250,7 +259,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 8 ]; then
+    elif [ $opc -eq 08 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -274,7 +283,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    sleep 1
 	    main
 	    menu
-    elif [ $opc -eq 9 ]; then
+    elif [ $opc -eq 09 ]; then
             echo ""
 	    echo -e "$a ¿LHOST?$nc"
 	    echo ""
@@ -410,7 +419,7 @@ read -p " $(echo -e $v$shell $nc)" opc
             echo ""
             echo ""
 	    sleep 3
-	    exit
+	    exit 0
     else
 	    echo ""
 	    echo -e "$a invalid option $nc"
