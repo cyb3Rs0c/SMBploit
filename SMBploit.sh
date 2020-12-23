@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #Author:  d4t4s3c
-#Email:   d4t4s3c@protonmail.com
 #Twitter: @d4t4s3c
+#Email:   d4t4s3c@protonmail.com
 #GitHub:  www.github.com/d4t4s3c
 
 #colors
@@ -419,6 +419,7 @@ read -p " $(echo -e $v$shell $nc)" opc
             echo ""
             echo ""
 	    sleep 3
+	    tput cnorm
 	    exit 0
     else
 	    echo ""
