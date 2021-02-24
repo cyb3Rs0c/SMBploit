@@ -1,6 +1,6 @@
 # SMBploit
 
-Pentesting tool for SMB (Samba) SMBv1/SMBv2 protocol in Microsoft Windows (Metasploit-Framework)
+Pentesting tool for `SMB (Samba) SMBv1/SMBv2` protocol in `Microsoft Windows (Metasploit-Framework)`
 
 # ONLY USE FOR EDUCATIONAL PURPOSES
 
