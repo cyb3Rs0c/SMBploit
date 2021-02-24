@@ -12,7 +12,7 @@ Pentesting tool for SMB (Samba) SMBv1/SMBv2 protocol in Microsoft Windows (Metas
 * Install
 
 ```cmd
-root@kali:~# cd ~ (<- IMPORTANT)
+root@kali:~# cd ~
 root@kali:~# git clone https://github.com/d4t4s3c/SMBploit.git
 root@kali:~# cd SMBploit
 root@kali:~# chmod +x *.sh
