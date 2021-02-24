@@ -2,6 +2,9 @@
 
 Pentesting tool for `SMB (Samba) SMBv1/SMBv2` protocol in `Microsoft Windows (Metasploit-Framework)`
 
+* [MS08-067](https://www.rapid7.com/db/modules/exploit/windows/smb/ms08_067_netapi/)
+* [MS17-010](https://github.com/Telefonica/Eternalblue-Doublepulsar-Metasploit) **Telefónica | Pablo Gonzalez (@pablogonzalezpe) | Sheila A. Berta (@UnaPibaGeek)**
+
 # ONLY USE FOR EDUCATIONAL PURPOSES
 
 * Screenshot
